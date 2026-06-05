@@ -12,7 +12,14 @@ const CompoundServerHeading = ({ children }: { children: React.ReactNode }) => {
   return <h2>{children}</h2>
 }
 
+const CompoundServerContent = ({ children }: { children: React.ReactNode }) => {
+  return <div className="content">{children}</div>
+}
+
 CompoundServer.Heading = CompoundServerHeading
+CompoundServer.Content = CompoundServerContent
+
 CompoundServerHeading.displayName = "CompoundServerHeading"
+CompoundServerContent.displayName = "CompoundServerContent"
 
 export { CompoundServer }
